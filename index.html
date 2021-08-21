@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac-Book-Pro</title>
+      <!-- favicon -->
+      <link rel="shortcut icon" href="images/apple-fav.jpg" type="image/x-icon">
       <!-- css -->
       <link rel="stylesheet" href="css/style.css">
       <!-- bootstrpa css -->
@@ -16,20 +18,25 @@
 
 </head>
 <body>
+
+  <header></header>
     <main>
-        <section class="container mt-5">
+        <section class="container m-5">
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <!-- image -->
-                <div class="col">
+                <div class="col ">
                     <img class="w-75" src="images/mac.png" class="card-img-top" alt="...">
                 </div>
-                 <!-- heder text -->
                  
                 <div class="col">
-                    <div class="card-body">
-                      <h2 class="card-title">Customize your Blue  24-inch iMac with Apple M1 chip.</h2>
-                        <article class="card-text">
-                            Apple M1 with 8-core CPU with 4 performance cores and efficiency cores, 7-core GPU, and 16-core Nureal Engine 8GB unified memory 256GB SSD stroge Two Thunderbolt/ USB 4 ports Magic Mouse Magic Keybord- US English
+                    <div class="card-body pt-0">
+                      <article class="card-text">
+                      <!-- title -->
+                      <h1 class="card-title fw-bold">Customize your Blue  24-inch iMac with Apple M1 chip.</h1>
+                          <!-- core-details -->
+                           <p>
+                             Apple M1 with 8-core CPU with 4 performance cores and efficiency cores, 7-core GPU, and 16-core Nureal Engine 8GB unified memory 256GB SSD stroge Two Thunderbolt/ USB 4 ports Magic Mouse Magic Keybord- US English
+                          </p>
                         </article>
 
                         <!-- memorey -->
@@ -41,17 +48,17 @@
 
                         <!-- storage -->
                         <div class="mt-5">
-                            <h5>Storage</h5>
-                                <button id="storage-256gb" type="button" class="btn btn-outline-dark">256GB SSD storage</button>
-                                <button id="storage-512gb" type="button" class="btn btn-outline-dark">512GB SSD storage</button>
-                                <button id="storage-1tb" type="button" class="btn btn-outline-dark">1TB SSD storage</button>
-                            </div>
+                          <h5>Storage</h5>
+                            <button id="storage-256gb" type="button" class="btn btn-outline-dark">256GB SSD storage</button>
+                            <button id="storage-512gb" type="button" class="btn btn-outline-dark">512GB SSD storage</button>
+                            <button id="storage-1tb" type="button" class="btn btn-outline-dark">1TB SSD storage</button>
+                        </div>
                             
                         <!-- Delivery  -->
                         <div class="mt-5">
                             <h5>Chooses your delivery option</h5>
-                                <button id="free-delivery" type="button"  class="btn btn-outline-dark">Fridy, Aug 25 FREE Prime Delivery</button>
-                                <button id="charge-delivery" type="button"  class="btn btn-outline-dark">Fridy, Aug 21 Delivery charge $20</button>
+                            <button id="free-delivery" type="button"  class="btn btn-outline-dark">Fridy, Aug 25 FREE Prime Delivery</button>
+                            <button id="charge-delivery" type="button"  class="btn btn-outline-dark">Fridy, Aug 21 Delivery charge $20</button>
                         </div>
 
                         <!-- table -->
@@ -83,21 +90,28 @@
                               </table>
 
                               <!-- promo code -->
-                              <h6>Add Promo Code</h6>
-                              <input class="p-1" id="promoCode" type="text" name="" >
-                              <button id="promo-code-apply" type="button" class="btn btn-md btn-danger">Apply</button>
+                              <div>
+                                <h6>Add Promo Code</h6>
+                                <input class="border-primary pb-2" id="promo-input" type="text" name="" >
+                                <button id="promo-code-apply" type="button" class="btn btn-danger px-3">Apply</button>
+                                <p id="discount-success" class="success">✅ You got 20% Discount Succesfully..</p>
+                                <p id="invalid-promo-code" class="invalid">❌Invalid Promo code 🙁</p>
+                              </div>
                         </div>
-                    </div>
                   </div>
                 </div>
+              </div>
+
+                <hr class="hr container">
+                <!-- total -->
+                <h1 class="text-center">Total: $<span id="final-price">1299</span></h1>
         </section>
     </main>
-    <hr class="hr container">
+    
     <!-- footer -->
-    <footer class="mb-5">
-        <h1 class="text-center">Total: $<span id="final-price">1299</span></h1>
-    </footer>
+  <footer></footer>
 
+    <!-- costum js -->
     <script src="js/mac-book.js"></script>
 </body>
 </html>

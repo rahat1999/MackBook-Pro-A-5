@@ -3,7 +3,7 @@
     const storageCost = document.getElementById("storage-cost");
     const totalDelivery = document.getElementById("delevery-charge");
 
-    let promoCode = document.getElementById('promoCode');
+    let promoCode = document.getElementById('promo-input');
     let promoCodeSubmit = document.getElementById('promo-code-apply');
     let finalPrice = document.getElementById('final-price');
 
@@ -54,15 +54,18 @@ document.getElementById('charge-delivery').addEventListener('click',function(){
 // Promo code Discount price
 function setPromoCode (){
     if(promoCode.value == 'stevekaku'){
+        
         promoCodeSubmit.disabled = true;
         promoCode.disabled = true;
-       finalPrice.innerText = parseInt(finalPrice.innerText) - (parseInt(finalPrice.innerText) / 100) * 20;
-       promoCode.value = ' ';
+        finalPrice.innerText = parseInt(finalPrice.innerText) - (parseInt(finalPrice.innerText)*0.2);
+        promoCode.value = ' ';
+        document.getElementById('discount-success').style.display='block'; //success massage
+        document.getElementById('invalid-promo-code').style.display='none';
     }
     else{
-        alert('Invied Promo Code'); //Error massage
         promoCodeSubmit.disabled= false;
         promoCode.disabled = false;
+        document.getElementById('invalid-promo-code').style.display='block'; //Error massage
       
     } 
 }
