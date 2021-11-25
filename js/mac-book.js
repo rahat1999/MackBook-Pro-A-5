@@ -54,7 +54,6 @@ document.getElementById('charge-delivery').addEventListener('click',function(){
 // Promo code Discount price
 function setPromoCode (){
     if(promoCode.value == 'stevekaku'){
-        
         promoCodeSubmit.disabled = true;
         promoCode.disabled = true;
         finalPrice.innerText = parseInt(finalPrice.innerText) - (parseInt(finalPrice.innerText)*0.2);
